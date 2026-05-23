@@ -19,7 +19,7 @@ async function getTravelData() {
     return;
   }
 
-  const apiKey = "YOUR_API_KEY_HERE";
+  const apiKey = "99abd94b1dcb8a584a71ba27cf0f115a";
 
   try {
     const response = await fetch(
