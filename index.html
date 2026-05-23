@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelMate Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | TravelMate Creator</p>
+  <h1>TravelMate ✈️</h1>
+  <p>Your Smart Travel Planning Companion</p>
+  <button onclick="toggleTheme()">🌙 Toggle Mode</button>
 </header>
 
-<section id="about">
+<section class="container">
+
+  <!-- LEFT SIDE (PROFILE) -->
+  <div class="card">
     <h2>About Me</h2>
-    <img src="assets/profile.jpg" alt="Profile" width="150">
-    <p>I am a web developer passionate about building smart and simple tools like TravelMate, which helps users plan trips with real-time information.</p>
-</section>
+    <img src="assets/profile.jpg" alt="Profile">
+    <p>I am a web developer passionate about building tools that simplify travel planning. TravelMate combines weather, insights, and tips in one place.</p>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul id="skills-list"></ul>
-</section>
+    <h3>Skills</h3>
+    <ul id="skills"></ul>
+  </div>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <p><strong>TravelMate</strong> – A web app that provides weather and travel insights in one place.</p>
-</section>
+  <!-- RIGHT SIDE (APP) -->
+  <div class="card">
+    <h2>Plan Your Trip 🌍</h2>
 
-<section id="travel">
-    <h2>TravelMate 🌍</h2>
+    <input type="text" id="city" placeholder="Enter a city">
+    <button onclick="getTravelData()">Search</button>
 
-    <input type="text" id="city" placeholder="Enter city">
-    <button onclick="getWeather()">Check Weather</button>
+    <div id="results"></div>
+  </div>
 
-    <p id="weather-result"></p>
-</section>
-
-<section id="extra">
-    <h2>Extra Feature</h2>
-    <button onclick="toggleTheme()">Toggle Dark Mode</button>
 </section>
 
 <footer>
-    <p>© 2026 Your Name</p>
+  <p>© 2026 TravelMate</p>
 </footer>
 
 <script src="script.js"></script>
