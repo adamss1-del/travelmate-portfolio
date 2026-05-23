@@ -10,36 +10,22 @@
 
 <header>
   <h1>TravelMate ✈️</h1>
-  <p>Your Smart Travel Planning Companion</p>
-  <button onclick="toggleTheme()">🌙 Toggle Mode</button>
+  <p>Plan smarter. Travel easier.</p>
 </header>
 
-<section class="container">
+<main>
 
-  <!-- LEFT SIDE (PROFILE) -->
-  <div class="card">
-    <h2>About Me</h2>
-    <img src="assets/profile.jpg" alt="Profile">
-    <p>I am a web developer passionate about building tools that simplify travel planning. TravelMate combines weather, insights, and tips in one place.</p>
-
-    <h3>Skills</h3>
-    <ul id="skills"></ul>
-  </div>
-
-  <!-- RIGHT SIDE (APP) -->
-  <div class="card">
-    <h2>Plan Your Trip 🌍</h2>
-
-    <input type="text" id="city" placeholder="Enter a city">
+  <section class="search-box">
+    <input type="text" id="city" placeholder="Enter destination (e.g., Paris)">
     <button onclick="getTravelData()">Search</button>
+  </section>
 
-    <div id="results"></div>
-  </div>
+  <section id="results" class="results"></section>
 
-</section>
+</main>
 
 <footer>
-  <p>© 2026 TravelMate</p>
+  <button onclick="toggleTheme()">🌙 Toggle Mode</button>
 </footer>
 
 <script src="script.js"></script>
